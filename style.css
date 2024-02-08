@@ -1,0 +1,129 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px ;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: auto;
+    /* height: 100vh; */
+   
+    gap: 15px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.main
+{
+    margin-top: 6vw;
+    border: 1px solid black;
+    width: 25vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.display
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 23vw;
+    height: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    gap: 12vw;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color: white;
+}
+
+input
+{
+    width: 14vw;
+    height: 3vh;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 0.5vw;
+}
+button
+{
+    width: 5vw;
+    height: 4.5vh;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#input
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label
+{
+    color: white;
+    margin-left: 2px;
+}
+
+@media (max-width:600px)
+{
+    .main{
+        margin-top: 10vh;
+    }
+
+    .main,.display{
+        width: 80vw;
+        height: 15vh;
+        border-radius: 15px;
+    }
+    input 
+    {
+        width: 50vw;
+    }
+    button{
+            width: 17vw;
+    }
+    #input
+    {
+        margin-bottom: 2vh;
+    }
+    .display{
+        height: 10vh;
+        gap: 20vh;
+    }
+}
